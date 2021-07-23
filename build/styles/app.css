@@ -6,6 +6,9 @@ body {
 }
 
 h1 {
+  color: #00494d;
+  letter-spacing: 0.8rem;
+  opacity: 0.8;
   text-transform: uppercase;
 }
 
