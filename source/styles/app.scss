@@ -32,6 +32,17 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+.btn {
+    background-color: $very-dark-cyan;
+    border: 0;
+    border-radius: 0.3125rem;
+    box-sizing: content-box;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 0.8rem 3.5rem;
+    text-align: center;
+}
+
 .container {
     margin: 5rem auto 0 auto;
     // width: 60vw;
@@ -39,6 +50,24 @@ body {
 
 .container h1 {
     text-align: center;
+}
+
+.input {
+    background-color: $light-grayish-cyan;
+    border: none;
+    color: $very-dark-cyan;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    text-align: right;
+    
+}
+
+.input__dollar-sign-bg {
+    background-image: url('../../images/icon-dollar.svg');
+    background-position: 1.5rem 1.25rem;
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
 }
 
 .panel-container {
@@ -51,6 +80,24 @@ body {
 
 .panel {
     margin: 2rem;
+}
+
+.panel-group {
+    display: flex;
+    flex-direction: column;
+
+    .btn-group {
+        align-items: center;
+        display: flex;
+        flex: 0 0 33.333333333%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .btn {
+            margin: 0.5rem;
+        }
+    }
 }
 
 .panel-subtotal {

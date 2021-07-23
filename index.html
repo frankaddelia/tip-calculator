@@ -31,7 +31,7 @@
 					<label for="bill">
 						Bill
 					</label>
-					<input type="text" id="bill" placeholder="0.00">
+					<input type="text" id="bill" class="input input__dollar-sign-bg" value="0.00" placeholder="0.00">
 				</div>
 			
 				<div class="panel-group">
@@ -39,17 +39,17 @@
 					<div class="btn-group">
 						<button class="btn">5%</button>
 						<button class="btn">10%</button>
-						<button class="btn">15%</button>
+						<button class="btn active">15%</button>
 						<button class="btn">25%</button>
 						<button class="btn">50%</button>
-						<button class="btn">Custom</button>
+						<input type="text" id="custom-tip" class="input" placeholder="Custom">
 					</div>
 				</div>
 
 
 				<div class="panel-group">
 					<label for="numPeople">Number of People</label>
-					<input type="text" id="numPeople" min="1" placeholder="0">
+					<input type="text" id="numPeople" class="input" min="1" value="0" placeholder="0">
 				</div>
 			</div>
 			
