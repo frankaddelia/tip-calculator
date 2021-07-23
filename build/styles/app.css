@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 .attribution {
   bottom: 0;
   font-size: 0.6875rem;
@@ -104,6 +108,14 @@ body {
 
 .panel-subtotal__white-text {
   color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  .panel-container {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 60vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
