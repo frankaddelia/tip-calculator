@@ -118,6 +118,11 @@ h1 {
   color: white;
 }
 
+.panel-group--row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .unit {
   color: #7f9c9f;
 }
