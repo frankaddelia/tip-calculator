@@ -9,7 +9,7 @@ body {
   left: 0;
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .attribution a {
@@ -18,17 +18,24 @@ body {
 
 .container {
   margin: 5rem auto 0 auto;
-  width: 60vw;
 }
 
 .container h1 {
   text-align: center;
 }
 
-.panel {
+.panel-container {
   background-color: white;
   border-radius: 1.5625rem;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
+  width: 100vw;
+}
+
+.panel-subtotal {
+  background-color: #00494d;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
