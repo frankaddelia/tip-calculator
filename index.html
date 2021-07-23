@@ -26,24 +26,34 @@
 
 	<main class="container">
 		<section class="panel-container">
-			<div>
-				<label for="bill">
-					Bill
-				</label>
-				<input type="text" id="bill" placeholder="0.00">
+			<div class="panel">
+				<div class="panel-group">
+					<label for="bill">
+						Bill
+					</label>
+					<input type="text" id="bill" placeholder="0.00">
+				</div>
 			
-				<label for="">Select Tip %</label>
-				<button class="btn">5%</button>
-				<button class="btn">10%</button>
-				<button class="btn">15%</button>
-				<button class="btn">25%</button>
-				<button class="btn">50%</button>
-				<button class="btn">Custom</button>
+				<div class="panel-group">
+					<label for="">Select Tip %</label>
+					<div class="btn-group">
+						<button class="btn">5%</button>
+						<button class="btn">10%</button>
+						<button class="btn">15%</button>
+						<button class="btn">25%</button>
+						<button class="btn">50%</button>
+						<button class="btn">Custom</button>
+					</div>
+				</div>
+
+
+				<div class="panel-group">
+					<label for="numPeople">Number of People</label>
+					<input type="text" id="numPeople" min="1" placeholder="0">
+				</div>
 			</div>
 			
-			<div class="panel-subtotal">
-				<label for="numPeople">Number of People</label>
-				<input type="text" id="numPeople" min="1" placeholder="0">
+			<div class="panel panel-subtotal">
 				<label for="tipPerPerson">
 					Tip Amount
 					/ person

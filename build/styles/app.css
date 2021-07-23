@@ -1,6 +1,8 @@
 body {
   background-color: #c5e4e7;
   font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
 }
 
 .attribution {
@@ -29,8 +31,11 @@ body {
   border-radius: 1.5625rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   width: 100vw;
+}
+
+.panel {
+  margin: 2rem;
 }
 
 .panel-subtotal {
