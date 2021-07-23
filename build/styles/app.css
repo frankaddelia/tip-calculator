@@ -39,8 +39,16 @@ body {
 }
 
 .panel-subtotal {
-  background-color: #00494d;
   border-radius: 1rem;
+  padding: 2rem;
+}
+
+.panel-subtotal__dark-cyan-bg {
+  background-color: #00494d;
+}
+
+.panel-subtotal__white-text {
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

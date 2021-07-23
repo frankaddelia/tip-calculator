@@ -54,6 +54,14 @@ body {
 }
 
 .panel-subtotal {
-    background-color: $very-dark-cyan;
     border-radius: 1rem;
+    padding: 2rem;
+}
+
+.panel-subtotal__dark-cyan-bg {
+    background-color: $very-dark-cyan;
+} 
+
+.panel-subtotal__white-text {
+    color: $white;
 }
