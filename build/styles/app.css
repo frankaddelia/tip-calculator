@@ -3,12 +3,21 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.container h1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
