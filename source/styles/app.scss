@@ -26,10 +26,10 @@ h1 {
 }
 
 .attribution {
-    bottom: 0;
+    // bottom: 0;
     font-size: 0.6875rem;
-    left: 0;
-    position: absolute;
+    // left: 0;
+    // position: absolute;
     text-align: center;
     width: 100vw;
 }
@@ -44,9 +44,16 @@ h1 {
     border-radius: 0.3125rem;
     box-sizing: content-box;
     color: $white;
+    font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 0.8rem 3.5rem;
     text-align: center;
+}
+
+.btn__strong-cyan {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
 }
 
 .container {
@@ -102,6 +109,7 @@ h1 {
 .panel-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 
     .btn-group {
         align-items: center;
@@ -128,6 +136,10 @@ h1 {
 
 .panel-subtotal__white-text {
     color: $white;
+}
+
+.unit {
+    color: $dark-grayish-cyan;
 }
 
 @media only screen and (min-width: 800px) {

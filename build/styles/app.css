@@ -13,10 +13,7 @@ h1 {
 }
 
 .attribution {
-  bottom: 0;
   font-size: 0.6875rem;
-  left: 0;
-  position: absolute;
   text-align: center;
   width: 100vw;
 }
@@ -31,9 +28,16 @@ h1 {
   border-radius: 0.3125rem;
   box-sizing: content-box;
   color: white;
+  font-family: "Space Mono", monospace;
   font-size: 1.5rem;
+  font-weight: bold;
   padding: 0.8rem 3.5rem;
   text-align: center;
+}
+
+.btn__strong-cyan {
+  background-color: #26c0ab;
+  color: #00494d;
 }
 
 .container {
@@ -87,6 +91,7 @@ h1 {
 .panel-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .panel-group .btn-group {
   align-items: center;
@@ -111,6 +116,10 @@ h1 {
 
 .panel-subtotal__white-text {
   color: white;
+}
+
+.unit {
+  color: #7f9c9f;
 }
 
 @media only screen and (min-width: 800px) {
