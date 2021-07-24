@@ -48,6 +48,12 @@ h1 {
   text-align: center;
 }
 
+.faux-input {
+  color: #26c0ab;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .input {
   background-color: #f4fafa;
   border: none;

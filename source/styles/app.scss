@@ -65,6 +65,12 @@ h1 {
     text-align: center;
 }
 
+.faux-input {
+    color: $strong-cyan;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .input {
     background-color: $light-grayish-cyan;
     border: none;
