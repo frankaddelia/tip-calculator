@@ -7,7 +7,7 @@ let tipPercentage = 0;
 
 bill.addEventListener('keyup', () => {
     billAmount = parseFloat(bill.value);
-
+    
     calculateTipAmount();
 });
 
@@ -29,8 +29,12 @@ function clearActiveState() {
 }
 
 function calculateTipAmount () {
-    if (billAmount >= 0) {
+    if (billAmount >= 0 && isNumeric(billAmount)) {
         const total = billAmount * tipPercentage;
         tipAmount.innerHTML = `\$${total.toFixed(2)}`;
     }
+}
+
+function isNumeric (check) {
+    return !isNaN(check);
 }
