@@ -1,5 +1,6 @@
 const bill = document.querySelector('#bill');
 const buttons = document.querySelectorAll('.btn-group .btn');
+const customTip = document.querySelector('#custom-tip');
 const tipAmount = document.querySelector('#tipAmount');
 
 let billAmount = 0;
@@ -20,6 +21,17 @@ buttons.forEach((button) => {
 
         calculateTipAmount();
     })
+});
+
+customTip.addEventListener('keyup', () => {
+    if (!isNumeric(customTip.value)) {
+        console.error('value is not numeric!', customTip.value);
+        return;
+    }
+
+    tipPercentage = customTip.value / 100;
+    clearActiveState();
+    calculateTipAmount();
 });
 
 function clearActiveState() {
