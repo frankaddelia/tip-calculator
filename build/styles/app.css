@@ -36,6 +36,11 @@ h1 {
   text-align: center;
 }
 
+.btn.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
 .btn__strong-cyan {
   background-color: #26c0ab;
   color: #00494d;

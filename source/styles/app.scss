@@ -53,6 +53,11 @@ h1 {
 
 }
 
+.btn.active {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+}
+
 .btn__strong-cyan {
     background-color: $strong-cyan;
     color: $very-dark-cyan;
