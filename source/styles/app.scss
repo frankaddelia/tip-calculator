@@ -87,6 +87,10 @@ h1 {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
 .input {
     background-color: $light-grayish-cyan;
     border: none;
@@ -111,7 +115,7 @@ input:focus {
     outline: none !important;
 }
 
-input:invalid {
+.input-error-box, input:invalid {
     border: 2px solid $invalid;
     border-radius: 5px;
     box-shadow: 0 0 1px $invalid;

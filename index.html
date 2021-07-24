@@ -28,7 +28,7 @@
 			<div class="panel">
 				<div class="panel-group">
 					<p class="input-label">
-						<label for="bill" class="label-header">Bill</label>  <span class="input-error">Must be a positive numeric value</span>
+						<label for="bill" class="label-header">Bill</label>  <span id="bill-error-label" class="input-error hidden">Must be a positive numeric value</span>
 					</p>
 					<input type="text" id="bill" class="input input__dollar-sign-bg" placeholder="0">
 				</div>
@@ -48,7 +48,7 @@
 
 				<div class="panel-group">
 					<p class="input-label">
-						<label for="numPeople" class="label-header">Number of People</label> <span class="input-error">Can't be fewer than 1</span>
+						<label for="numPeople" class="label-header">Number of People</label> <span id="numPeople-error-label" class="input-error hidden">Can't be fewer than 1</span>
 					</p>
 					<input type="number" id="numPeople" class="input input__people-bg" min="1" value="1" placeholder="1">
 				</div>

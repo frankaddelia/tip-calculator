@@ -68,6 +68,10 @@ h1 {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 .input {
   background-color: #f4fafa;
   border: none;
@@ -91,7 +95,7 @@ input:focus {
   outline: none !important;
 }
 
-input:invalid {
+.input-error-box, input:invalid {
   border: 2px solid #c0263a;
   border-radius: 5px;
   box-shadow: 0 0 1px #c0263a;
