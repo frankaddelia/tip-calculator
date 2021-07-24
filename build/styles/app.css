@@ -110,12 +110,13 @@ h1 {
   margin-bottom: 2rem;
 }
 .panel-group .btn-group {
+  align-content: space-between;
   align-items: center;
   display: flex;
   flex: 0 0 33.333333333%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .panel-group .btn-group .btn {
   margin: 0.5rem;
