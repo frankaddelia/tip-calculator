@@ -98,6 +98,17 @@ input:invalid {
   outline: none !important;
 }
 
+.input-error {
+  color: #c0263a;
+  font-weight: bold;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
 .input__dollar-sign-bg {
   background-image: url("../../images/icon-dollar.svg");
   background-position: 1.5rem 1.25rem;
