@@ -93,7 +93,7 @@ h1 {
 .panel {
   margin: 2rem;
 }
-.panel label {
+.panel label.label-header {
   color: #7f9c9f;
   font-weight: bold;
   margin-bottom: 0.5rem;
