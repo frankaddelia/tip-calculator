@@ -26,18 +26,23 @@ h1 {
   background-color: #00494d;
   border: 0;
   border-radius: 0.3125rem;
-  box-sizing: content-box;
+  box-sizing: border-box;
   color: white;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.8rem 3.5rem;
+  padding: 0.8rem 0;
+  min-width: 10rem;
   text-align: center;
 }
 
 .btn__strong-cyan {
   background-color: #26c0ab;
   color: #00494d;
+}
+
+.btn--full {
+  width: 100%;
 }
 
 .container {
