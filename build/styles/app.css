@@ -68,9 +68,14 @@ h1 {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 .input {
   background-color: #f4fafa;
   border: none;
+  border-radius: 5px;
   color: #00494d;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
@@ -81,6 +86,31 @@ h1 {
 
 .input__custom {
   width: 7rem;
+}
+
+input:focus {
+  border: 2px solid #26c0ab;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #26c0ab;
+  outline: none !important;
+}
+
+.input-error-box, input:invalid {
+  border: 2px solid #c0263a;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #c0263a;
+  outline: none !important;
+}
+
+.input-error {
+  color: #c0263a;
+  font-weight: bold;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .input__dollar-sign-bg {

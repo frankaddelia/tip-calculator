@@ -7,6 +7,7 @@ $strong-cyan: hsl(172, 67%, 45%);
 $very-dark-cyan: hsl(183, 100%, 15%);
 $darker-grayish-cyan: hsl(186, 14%, 43%);
 $dark-grayish-cyan: hsl(184, 14%, 56%);
+$invalid: hsl(352, 67%, 45%);
 $lighter-grayish-cyan: hsl(185, 41%, 84%);
 $light-grayish-cyan: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
@@ -86,9 +87,14 @@ h1 {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
 .input {
     background-color: $light-grayish-cyan;
     border: none;
+    border-radius: 5px;
     color: $very-dark-cyan;
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
@@ -101,6 +107,37 @@ h1 {
 .input__custom {
     width: 7rem;
 }
+
+input:focus {
+    border: 2px solid $strong-cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 1px $strong-cyan;
+    outline: none !important;
+}
+
+.input-error-box, input:invalid {
+    border: 2px solid $invalid;
+    border-radius: 5px;
+    box-shadow: 0 0 1px $invalid;
+    outline: none !important;
+}
+
+.input-error {
+    color: $invalid;
+    font-weight: bold;
+}
+
+.input-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+// .input:focus {
+//     outline: none !important;
+//     border:1px solid red;
+//     box-shadow: 0 0 10px #719ECE;
+//   }
 
 .input__dollar-sign-bg {
     background-image: url('../../images/icon-dollar.svg');
