@@ -110,6 +110,12 @@ h1 {
 
 .panel {
     margin: 2rem;
+
+    label {
+        color: $dark-grayish-cyan;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .panel-group {
