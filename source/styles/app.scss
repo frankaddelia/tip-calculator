@@ -1,0 +1,243 @@
+// Colors
+
+// Primary
+$strong-cyan: hsl(172, 67%, 45%);
+
+// Neutral
+$very-dark-cyan: hsl(183, 100%, 15%);
+$darker-grayish-cyan: hsl(186, 14%, 43%);
+$dark-grayish-cyan: hsl(184, 14%, 56%);
+$invalid: hsl(352, 67%, 45%);
+$lighter-grayish-cyan: hsl(185, 41%, 84%);
+$light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+body {
+    background-color: $lighter-grayish-cyan;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $very-dark-cyan;
+    letter-spacing: 0.8rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.attribution {
+    // bottom: 0;
+    font-size: 0.6875rem;
+    // left: 0;
+    // position: absolute;
+    text-align: center;
+    width: 100vw;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.btn {
+    background-color: $very-dark-cyan;
+    border: 0;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+    color: $white;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem 0;
+    min-width: 10rem;
+    text-align: center;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.active {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+}
+
+.btn__strong-cyan {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+.container {
+    margin: 5rem auto 0 auto;
+    // width: 60vw;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.faux-input {
+    color: $strong-cyan;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.input {
+    background-color: $light-grayish-cyan;
+    border: none;
+    border-radius: 5px;
+    color: $very-dark-cyan;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    text-align: right;
+    
+}
+
+.input__custom {
+    width: 7rem;
+}
+
+input:focus {
+    border: 2px solid $strong-cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 1px $strong-cyan;
+    outline: none !important;
+}
+
+.input-error-box, input:invalid {
+    border: 2px solid $invalid;
+    border-radius: 5px;
+    box-shadow: 0 0 1px $invalid;
+    outline: none !important;
+}
+
+.input-error {
+    color: $invalid;
+    font-weight: bold;
+}
+
+.input-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+// .input:focus {
+//     outline: none !important;
+//     border:1px solid red;
+//     box-shadow: 0 0 10px #719ECE;
+//   }
+
+.input__dollar-sign-bg {
+    background-image: url('../../images/icon-dollar.svg');
+    background-position: 1.5rem 1.25rem;
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+}
+
+.input__people-bg {
+    background-image: url('../../images/icon-person.svg');
+    background-position: 1.5rem 1.25rem;
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+}
+
+.panel-container {
+    background-color: $white;
+    border-radius: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.panel {
+    margin: 2rem;
+
+    label.label-header {
+        color: $dark-grayish-cyan;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.panel-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .btn-group {
+        align-content: space-between;
+        align-items: center;
+        display: flex;
+        flex: 0 0 33.333333333%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .btn {
+            margin: 0.5rem;
+        }
+    }
+}
+
+.panel-subtotal {
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.panel-subtotal__dark-cyan-bg {
+    background-color: $very-dark-cyan;
+} 
+
+.panel-subtotal__white-text {
+    color: $white;
+}
+
+.panel-group--row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unit {
+    color: $dark-grayish-cyan;
+}
+
+@media only screen and (min-width: 1000px) {
+    .btn {
+        min-width: 6rem;
+    }
+
+    .input__custom {
+        font-size: 1.1rem;
+        width: 4rem;
+    }
+
+    .panel-container {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    .panel {
+        width: 50%;
+    }
+
+    .panel-group--row {
+        margin-bottom: 4.5rem;
+    }
+
+    .panel-group--row:last-of-type {
+        margin-bottom: 11.5rem;
+    }
+}
