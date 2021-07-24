@@ -30,17 +30,17 @@
 					<label for="bill" class="label-header">
 						Bill
 					</label>
-					<input type="text" id="bill" class="input input__dollar-sign-bg" value="0.00" placeholder="0.00">
+					<input type="text" id="bill" class="input input__dollar-sign-bg" placeholder="0">
 				</div>
 			
 				<div class="panel-group">
 					<label for="" class="label-header">Select Tip %</label>
 					<div class="btn-group">
-						<button class="btn">5%</button>
-						<button class="btn">10%</button>
-						<button class="btn active">15%</button>
-						<button class="btn">25%</button>
-						<button class="btn">50%</button>
+						<button class="btn" data-tip-percentage="0.05">5%</button>
+						<button class="btn" data-tip-percentage="0.10">10%</button>
+						<button class="btn" data-tip-percentage="0.15">15%</button>
+						<button class="btn" data-tip-percentage="0.25">25%</button>
+						<button class="btn" data-tip-percentage="0.50">50%</button>
 						<input type="text" id="custom-tip" class="input input__custom" placeholder="Custom">
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 
 				<div class="panel-group">
 					<label for="numPeople" class="label-header">Number of People</label>
-					<input type="text" id="numPeople" class="input input__people-bg" min="1" value="0" placeholder="0">
+					<input type="number" id="numPeople" class="input input__people-bg" min="1" value="1" placeholder="1">
 				</div>
 			</div>
 			
@@ -66,18 +66,20 @@
 						<strong>Total</strong><br>
 						<span class="unit">/ person</span>
 					</label>
-					<span id="tipTotal" class="faux-input">$0.00</span>
+					<span id="total" class="faux-input">$0.00</span>
 				</div>
 			
-				<button class="btn btn__strong-cyan btn--full">RESET</button>
+				<button id="reset" class="btn btn__strong-cyan btn--full">RESET</button>
 			</div>
 		</section>
 	</main>
 
 	<footer class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="#">WTFranklin</a>.
 	</footer>
+
+	<script src="build/js/app.js"></script>
 </body>
 
 </html>
