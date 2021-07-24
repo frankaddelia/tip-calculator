@@ -1,7 +1,9 @@
 const bill = document.querySelector('#bill');
 const buttons = document.querySelectorAll('.btn-group .btn');
 const customTip = document.querySelector('#custom-tip');
+const numPeople = document.querySelector('#numPeople');
 const tipAmount = document.querySelector('#tipAmount');
+const total = document.querySelector('#total');
 
 let billAmount = 0;
 let tipPercentage = 0;
@@ -34,16 +36,35 @@ customTip.addEventListener('keyup', () => {
     calculateTipAmount();
 });
 
+numPeople.addEventListener('keyup', () => {
+    if (!isNumeric(numPeople.value)) {
+        console.error('not numeric!', numPeople.value);
+        return;
+    }
+
+    calculateTipAmount(numPeople.value);
+});
+
+numPeople.addEventListener('change', () => {
+    if (!isNumeric(numPeople.value)) {
+        console.error('not numeric!', numPeople.value);
+        return;
+    }
+
+    calculateTipAmount(numPeople.value);
+});
+
 function clearActiveState() {
     buttons.forEach((button) => {
         button.classList.remove('active');
     });
 }
 
-function calculateTipAmount () {
+function calculateTipAmount (totalPerPerson = 1) {
     if (billAmount >= 0 && isNumeric(billAmount)) {
-        const total = billAmount * tipPercentage;
-        tipAmount.innerHTML = `\$${total.toFixed(2)}`;
+        const tipTotal = billAmount * tipPercentage;
+        tipAmount.innerHTML = `\$${tipTotal.toFixed(2)}`;
+        total.innerHTML = `\$${((billAmount + tipTotal) / totalPerPerson).toFixed(2)}`;
     }
 }
 
